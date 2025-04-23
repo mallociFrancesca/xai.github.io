@@ -46,7 +46,7 @@
           <li><a href="#aims">Scope</a></li>         
           <li><a href="#topics">Topics</a></li>   
           <li><a href="#program">Program</a></li>
-          <li><a href="#keynote">Keynotes</a></li>
+          <li><a href="#keynote">Speaker</a></li>
           <li><a href="#venue">Venue</a></li>
           <li><a href="#contacts">Contacts</a></li>
         </ul>
@@ -74,10 +74,11 @@
       <div class="container-fluid">
         <div class="section-header">
           <h2>Course Aims and Scope</h2>
-          <p>Intelligent systems shape many daily decisions, but  their reasoning is often unclear. 
-            Among them, Recommender Systems personalize content but need transparency to build trust. 
-            This course explores how Knowledge Graphs (KGs) can enhance explainability by structuring knowledge and supporting reasoning. 
-            Students will integrate KGs with Reinforcement Learning and Generative Models, using tools like HuggingFace and Hopewise in hands-on sessions to build explainable recommender solutions.</p>
+          <p>Intelligent systems shape many daily decisions, but  their <strong>reasoning</strong> is often unclear. 
+            Among them, <strong>Recommender Systems</strong> personalize content but need transparency to build trust. 
+            This course explores how <strong>Knowledge Graphs</strong> (KGs) can enhance explainability by structuring knowledge and supporting reasoning. 
+            Students will integrate KGs with <strong>Reinforcement Learning</strong> and <strong>Generative Models</strong> , 
+            using tools like <strong>HuggingFace</strong> and <strong>Hopewise</strong> in hands-on sessions to build explainable recommender solutions.</p>
           
         </div>
       </div>
@@ -123,15 +124,13 @@
     What you need
     ============================-->
     <section id="requirements" class="wow fadeInUp section-with-bg">
-
       <div class="container-fluid">
         <div class="section-header">
          <h2>What you need</h2>
          <p>No prior experience with Knowledge Graphs, Reinforcement Learning, or Large Language Models is required. 
-          Just bring your curiosity and a laptop — everything else will be provided during the course through interactive notebooks. 😊</p>
+          Just bring your <strong>curiosity</strong> and a <strong>laptop </strong> — everything else will be provided during the course through interactive notebooks. 😊</p>
         </div>
       </div>
-
     </section>
 
 
@@ -143,13 +142,118 @@
         <div class="section-header">
           <h2>Program</h2>
           <p>Stay tuned—more details will be shared shortly! 😊</p>
-          <ul>
+          <!--<ul>
             <li><strong>Day 1:</strong> Foundation of Explainable AI</li>
             <li><strong>Day 2:</strong> Reinforcement Knowledge Graph Reasoning for Explainable Recommendations</li>
             <li><strong>Day 3:</strong> Foundations of Generative Models</li>
             <li><strong>Day 4:</strong> Explainable Generative Reasoning over Knowledge Graphs</li>
             <li><strong>Day 5:</strong> Faithful Generative Reasoning over Knowledge Graphs</li>
-          </ul>
+          </ul>-->
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Day</th>
+                  <th>Sessions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>21/07</td>
+                  <td>Day 1: Foundation of Explainable AI</td>
+                  <td>
+                    <strong>Welcome and Course Overview</strong>
+                    <ul class="custom-bullets">
+                      <li>Introduction to the course structure, objectives, and key topics.</li>
+                    </ul>
+                    <strong>Core Concepts: Explainability and Knowledge Grounding</strong>
+                    <ul class="custom-bullets">
+                      <li>We will explore the fundamental principles of explainable AI, with a focus on leveraging structured knowledge for reasoning and transparency. This session sets the theoretical groundwork for understanding how explanations can be derived from knowledge-driven models.</li>
+                    </ul>
+                    <strong>Hands-on Session: Interaction Data and Knowledge Graphs</strong>
+                    <ul class="custom-bullets">
+                      <li>An introduction to two publicly available datasets: MovieLens-1M (ML1M) and COCO. These datasets differ in domain, size, and sparsity, providing a diverse testing ground.</li>
+                      <li>Loading and exploring knowledge graphs and necessary preprocessing steps.</li>
+                      <li>Applying various knowledge embedding techniques.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22/07</td>
+                  <td>Day 2: Reinforcement Knowledge Graph Reasoning</td>
+                  <td>
+                    <strong>Welcome & Recap of Day 1</strong><br><br>
+                    <strong>Knowledge Graph Reasoning in Personalized Recommendations</strong>
+                    <ul class="custom-bullets">
+                      <li>Embedding-based and path-based approaches.</li>
+                      <li>Focus on <strong>PGPR</strong> and <strong>CAFE</strong> models.</li>
+                    </ul>
+                    <strong>Hands-on Session: PGPR & CAFE models</strong>
+                    <ul class="custom-bullets">
+                      <li>Implementing PGPR and CAFE using the Hopewise library.</li>
+                      <li>Training and evaluation of models.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>23/07</td>
+                  <td>Day 3: Foundations of Generative Models</td>
+                  <td>
+                    <strong>Welcome & Recap of Day 2</strong><br><br>
+                    <strong>Introduction to Transformer Architecture</strong>
+                    <ul class="custom-bullets">
+                      <li>We provide a foundational overview of the Transformer architecture, as introduced in the paper “Attention is All You Need”. Key components such as self-attention, positional encoding, and multi-head attention mechanisms will be explained to ground participants in the core principles behind modern generative models.</li>
+                    </ul>
+                    <strong>Hands-on Session: Hugging Face Transformers</strong>
+                    <ul class="custom-bullets">
+                      <li>Overview of the library’s structure and key components.</li>
+                      <li>Deep dive into tokenization, with a comparison of different tokenizers and their impact on model input representation.</li>
+                      <li>Exploration of the <i>AutoModelForSeq2SeqLM</i> architecture, showcasing how to load and utilize pre-trained models for sequence-to-sequence language modeling tasks.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>24/07</td>
+                  <td>Day 4: Explainable Generative Reasoning</td>
+                  <td>
+                    <strong>Welcome & Recap of Day 3</strong><br><br>
+                    <strong>Language Models for Explainable Recommendations</strong>
+                    <ul class="custom-bullets">
+                      <li>We provide a overview on the paradigms of language modeling (i.e., causal, masked, and text-to-text) and their applications, focusing on recommendation.</li>
+                      <li>We explore innovative integrations of KGs and language models to enhance explainability. Special focus will be given to PLM model (Path Language Modeling over Knowledge Graphs for Explainable Recommendation).</li>
+                    </ul>
+                    <strong>Hands-on Session: PLM Model</strong>
+                    <ul class="custom-bullets">
+                      <li>Learning how to construct training data by sampling reasoning paths from knowledge graphs.</li>
+                      <li>Using path-languale modeling to generate top-k recommendations along with natural language explanations.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>25/07</td>
+                  <td>Day 5: Faithful Generative Reasoning</td>
+                  <td>
+                    <strong>Welcome & Recap of Day 4</strong><br><br>
+                    <strong>Faithfulness in Generative Reasoning</strong>
+                    <ul class="custom-bullets">
+                      <li>This session explores the critical concept of faithfulness —ensuring that generated recommendations and their explanations accurately reflect the underlying knowledge graph.</li>
+                      <li>Addressing the challenge of hallucination, where generated explanations may diverge from the underlying KG, and exploring mitigation strategies.</li>
+                    </ul>
+                    <strong>Hands-on Session: PEARLM Model</strong>
+                    <ul class="custom-bullets">
+                      <li>Implementing PEARLM with Hugging Face and Hopewise libraries.</li>
+                      <li>Training and evaluation.</li>
+                    </ul>
+                    <strong>Final Discussion & Conclusions</strong>
+                    <ul class="custom-bullets">
+                      <li>Reflection and future directions.</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -158,29 +262,18 @@
     Keynote Section
     ============================-->
     <section id="keynote" class="wow fadeInUp section-with-bg">
-
       <div class="container-fluid">
-        <div class="section-header">
-          
+        <div class="section-header">       
           <h2>Speakers</h2>  
           </br>
-
 		      <p style="text-align: center;"><img src="./img/francesca_maridina_malloci.png" class="img-rounded" alt="Francesca Maridina Malloci" style=" width: 30%;"></p>
 
           <p style="text-align: center;">Dr. <strong><a href="https://francescamalloci/" target="_blank">Francesca Maridina Malloci</a> 
             <br> Assistant Professor, University of Cagliari <br> Department of Mathematics and Computer Science <br> (Italy)</strong></p>
-
             <p>Francesca Maridina Malloci is Assistant Professor at the Department of Mathematics and Computer Science of the University of Cagliari (Italy). Her research focuses on responsible artificial intelligence, with attention to decision-making systems, such as recommender systems, for multi-stakeholder contexts. She has co-authored papers in international journals and conferences. Francesca has chaired workshops and tutorials, including those on knowledge discovery at ACM UMAP,ECML-PKDD, and AIED, on explainable AI at ECIR, and on bias and fairness at SIGIR.  She also serves as Associate Editor for Neural Processing Letters (Springer) and Information Processing in Agriculture (Elsevier).</p>
-
-
           </br></br>    
- 
         </div>
       </div>
-      
-      
-      
-
     </section>
 
 
@@ -197,7 +290,7 @@
             1910 University Drive Boise,<br>
             ID 83725-2055 USA <br>
             <br>
-            <strong>Room:</strong>TBD
+            <strong>Room:</strong> TBD
             </p>
         </div>
       </div>
@@ -208,7 +301,6 @@
     Contacts Section
     ============================-->
     <section id="contacts" class="wow fadeInUp section-with-bg">
-
       <div class="container-fluid">
         <div class="section-header">
           <h2>Contacts</h2>

@@ -709,3 +709,50 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 24px;
   }
 }
+
+/*--------------------------------------------------------------
+# Prigram table
+--------------------------------------------------------------*/
+
+.table-container {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  vertical-align: top;
+}
+th {
+  background-color: #2c3e50;
+  color: #fff;
+  font-weight: bold;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+ul.custom-bullets {
+  padding-left: 1.2em;
+  margin: 0.5em 0;
+}
+
+ul.custom-bullets li {
+  margin-bottom: 0.5em;
+  list-style: disc;
+}
+
+@media (max-width: 768px) {
+  th, td {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
