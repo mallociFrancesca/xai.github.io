@@ -716,6 +716,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .table-container {
   overflow-x: auto;
+  max-width: 1000px; /* puoi adattare questa misura come preferisci */
+  margin: 0 auto;
 }
 table {
   width: 100%;
