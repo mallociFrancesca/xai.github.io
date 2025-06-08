@@ -169,41 +169,59 @@
                     </ul>
                     <strong>Core Concepts: Explainability and Knowledge Grounding</strong>
                     <ul class="custom-bullets">
-                      <li>We will explore the fundamental principles of explainable AI, with a focus on leveraging structured knowledge for reasoning and transparency. This session sets the theoretical groundwork for understanding how explanations can be derived from knowledge-driven models.</li>
+                      <li>Explore the foundational principles of explainable AI, focusing on how structured knowledge enables transparent and reasoning-based recommendations. This session provides the theoretical basis for knowledge-driven explainability.</li>
                     </ul>
-                    <strong>Hands-on Session: Interaction Data and Knowledge Graphs</strong>
+                    <strong>Hands-on Session: Introduction to recomendation pipeline with hopwise</strong>
                     <ul class="custom-bullets">
-                      <li>An introduction to two publicly available datasets: MovieLens-1M (ML1M) and COCO. These datasets differ in domain, size, and sparsity, providing a diverse testing ground.</li>
-                      <li>Loading and exploring knowledge graphs and necessary preprocessing steps.</li>
-                      <li>Applying various knowledge embedding techniques.</li>
+                      <li>Overview of the Hopwise library and its application in building recommendation models.</li> 
                     </ul>
                   </td>
                 </tr>
                 <tr>
                   <td>22/07</td>
-                  <td>Day 2: Reinforcement Knowledge Graph Reasoning</td>
+                  <td>Day2: Explainable Recommendation Pipeline over Knowledge Graph</td>
                   <td>
                     <strong>Welcome & Recap of Day 1</strong><br><br>
-                    <strong>Knowledge Graph Reasoning in Personalized Recommendations</strong>
+                    <strong>Explainable Recommendation Pipeline: from data processing to model evaluation</strong>
                     <ul class="custom-bullets">
-                      <li>Embedding-based and path-based approaches.</li>
-                      <li>Focus on <strong>PGPR</strong> and <strong>CAFE</strong> models.</li>
+                      <li>Introduction to explainability in recommendation systems and the role of knowledge graphs.</li>
+                      <li>End-to-end pipeline: from integrating knowledge graph data to training and evaluating explainable models.</li>
                     </ul>
-                    <strong>Hands-on Session: PGPR & CAFE models</strong>
+                    <strong>Hands-on Session: TransE for Knowledge Representation</strong>
                     <ul class="custom-bullets">
-                      <li>Implementing PGPR and CAFE using the Hopwise library.</li>
-                      <li>Training and evaluation of models.</li>
+                      <li>Loading and exploring knowledge graphs and necessary preprocessing steps.</li>
+                      <li>Training the TransE model and exploring its effectiveness in learning knowledge embeddings.</li>
                     </ul>
                   </td>
                 </tr>
                 <tr>
                   <td>23/07</td>
-                  <td>Day 3: Foundations of Generative Models</td>
+                  <td>Day 3: Explainable Reinforcement Learning for Knowledge Graph Reasoning</td>
                   <td>
                     <strong>Welcome & Recap of Day 2</strong><br><br>
+                    <strong>Theoretical Foundation of Reinfocerment Learning</strong>
+                    <ul class="custom-bullets">
+                      <li>Introduction to key concepts in reinforcement learning: agents, environments, states, actions, and rewards.</li>
+                      <li>Examination of how reinforcement learning guides path exploration to improve recommendation quality and explainability.</li>
+                    </ul>
+                    <strong>Theoretical Foundation of PGPR model</strong>
+                    <ul class="custom-bullets">
+                      <li>Overview of Policy-Guided Path Reasoning (PGPR) and its role in multi-hop reasoning over knowledge graphs.</li>
+                    </ul>
+                    <strong>Hands-on Session: PGPR Training & Evaluation</strong>
+                    <ul class="custom-bullets">
+                      <li>Training PGPR using the Hopwise library on knowledge graph datasets.</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>24/07</td>
+                  <td>Day 4: Foundations of Generative Models</td>
+                  <td>
+                    <strong>Welcome & Recap of Day 3</strong><br><br>
                     <strong>Introduction to Transformer Architecture</strong>
                     <ul class="custom-bullets">
-                      <li>We provide a foundational overview of the Transformer architecture, as introduced in the paper “Attention is All You Need”. Key components such as self-attention, positional encoding, and multi-head attention mechanisms will be explained to ground participants in the core principles behind modern generative models.</li>
+                      <li>Foundational overview of the Transformer architecture as introduced in “Attention is All You Need,” covering key components such as self-attention, positional encoding, and multi-head attention to build a solid understanding of modern generative models.</li>
                     </ul>
                     <strong>Hands-on Session: Hugging Face Transformers</strong>
                     <ul class="custom-bullets">
@@ -214,36 +232,17 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>24/07</td>
-                  <td>Day 4: Explainable Generative Reasoning</td>
-                  <td>
-                    <strong>Welcome & Recap of Day 3</strong><br><br>
-                    <strong>Language Models for Explainable Recommendations</strong>
-                    <ul class="custom-bullets">
-                      <li>We provide a overview on the paradigms of language modeling (i.e., causal, masked, and text-to-text) and their applications, focusing on recommendation.</li>
-                      <li>We explore innovative integrations of KGs and language models to enhance explainability. Special focus will be given to PLM model (Path Language Modeling over Knowledge Graphs for Explainable Recommendation).</li>
-                    </ul>
-                    <strong>Hands-on Session: PLM Model</strong>
-                    <ul class="custom-bullets">
-                      <li>Learning how to construct training data by sampling reasoning paths from knowledge graphs.</li>
-                      <li>Using path-languale modeling to generate top-k recommendations along with natural language explanations.</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
                   <td>25/07</td>
-                  <td>Day 5: Faithful Generative Reasoning</td>
+                  <td>Day 5: Explainable Generative Models over Knowledge Graph</td>
                   <td>
                     <strong>Welcome & Recap of Day 4</strong><br><br>
-                    <strong>Faithfulness in Generative Reasoning</strong>
+                    <strong>Language Models for Explainable Recommendations</strong>
                     <ul class="custom-bullets">
-                      <li>This session explores the critical concept of faithfulness —ensuring that generated recommendations and their explanations accurately reflect the underlying knowledge graph.</li>
-                      <li>Addressing the challenge of hallucination, where generated explanations may diverge from the underlying KG, and exploring mitigation strategies.</li>
+                       <li>Exploration of cutting-edge approaches that integrate knowledge graphs with language models to improve explainability, with a focus on PLM and PEARLM models.</li>
                     </ul>
-                    <strong>Hands-on Session: PEARLM Model</strong>
+                    <strong>Hands-on Session: PEARLM Implementation and Usage</strong>
                     <ul class="custom-bullets">
-                      <li>Implementing PEARLM with Hugging Face and Hopwise libraries.</li>
-                      <li>Training and evaluation.</li>
+                      <li>Using path-languale modeling to generate top-k recommendations along with natural language explanations.</li>
                     </ul>
                     <strong>Final Discussion & Conclusions</strong>
                     <ul class="custom-bullets">
@@ -251,6 +250,7 @@
                     </ul>
                   </td>
                 </tr>
+              
               </tbody>
             </table>
           </div>
@@ -290,7 +290,8 @@
             1910 University Drive Boise,<br>
             ID 83725-2055 USA <br>
             <br>
-            <strong>Room:</strong> TBD
+            <strong>Room:</strong> CPP-221<br>
+            <strong>Time:</strong> 9:00 AM – 11:00 AM<br>
             </p>
         </div>
       </div>
